@@ -20,3 +20,22 @@ RUN apt-get install -y software-properties-common && \
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
+#
+# Unlimited Strength Jurisdiction Policy Files
+#
+# Step 1: test whether the policies are in effect (expect no).
+#
+WORKDIR /data
+ADD Test.java /data/Test.java
+RUN javac Test.java && java Test && rm Test.class
+
+#
+# Step 2: Apply the policy files by overwriting the default files.
+#
+ADD UnlimitedJCEPolicyJDK8/local_policy.jar ${JAVA_HOME}/jre/lib/security/
+ADD UnlimitedJCEPolicyJDK8/US_export_policy.jar ${JAVA_HOME}/jre/lib/security/
+
+#
+# Step 3: re-test whether the policies are in effect.
+#
+RUN javac Test.java && java Test && rm Test.class

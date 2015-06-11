@@ -16,3 +16,20 @@ You will need to accept their license agreement to do this.
 directory assumed by the `Dockerfile`.
 
 Run `./build` to build the image.
+
+During the build, you will see `Test.java` being executed twice to verify the
+state of the cryptographic policy in use. Before the policy files have
+been updated, you should see this:
+
+    AES with 128-bit key OK.
+    AES with 256-bit key not permitted.
+    SHA-256 algorithm is present.
+
+Afterwards, the output should look like this instead:
+
+    AES with 128-bit key OK.
+    AES with 256-bit key OK.
+    SHA-256 algorithm is present.
+
+You can always compile and execute `/data/Test.java` in a container to verify
+the final state.

@@ -12,7 +12,7 @@ The `Dockerfile` assumes you have the policy files available:
 
 * Download `jce_policy-8.zip` [from Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).
 You will need to accept their license agreement to do this.
-* `gunzip jce_policy-8.zip` will generate the `UnlimitedJCEPolicyJDK8`
+* `unzip jce_policy-8.zip` will generate the `UnlimitedJCEPolicyJDK8`
 directory assumed by the `Dockerfile`.
 
 Run `./build` to build the image.

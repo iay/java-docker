@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 
 #
+# We need a local copy of the policy files.
+#
+if [ ! -d UnlimitedJCEPolicyJDK8 ]; then
+  echo "*** Unlimited policy file directory not present, build not possible."
+  echo "*** Check README.md for details."
+  exit 1
+fi
+
+#
 # Make sure we have the latest version of the base image we use.
 #
 docker pull ubuntu:14.04

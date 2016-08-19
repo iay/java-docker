@@ -9,7 +9,7 @@ Sometimes they are not what I want, however, and this repository contains
 Docker image builds for some alternatives.
 
 * `oracle-8` builds `iay/java:oracle-8`, an Oracle Java 8 JDK hosted on
-Ubuntu 14.04 LTS as a replacement for the now defunct
+Ubuntu 16.04 LTS as a replacement for the now defunct
 `dockerfile/java:oracle-java8`. This variant includes
 the Unlimited Strength Jurisdiction Policy Files, allowing the use
 of algorithms such as AES with a 256-bit key.

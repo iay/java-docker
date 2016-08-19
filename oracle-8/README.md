@@ -1,7 +1,7 @@
 # `iay/java:oracle-8`
 
 This Docker image includes an Oracle Java 8 JDK built on the official Docker
-[`ubuntu:14.04`](https://registry.hub.docker.com/_/ubuntu/) image. It also includes
+[`ubuntu:16.04`](https://registry.hub.docker.com/_/ubuntu/) image. It also includes
 the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files]
 (http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
 to allow the use of algorithms such as AES with 256-bit keys. These capabilities are

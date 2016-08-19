@@ -12,7 +12,7 @@ fi
 #
 # Make sure we have the latest version of the base image we use.
 #
-docker pull ubuntu:14.04
+docker pull ubuntu:16.04
 
 #
 # Build the image.

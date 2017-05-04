@@ -17,6 +17,6 @@ docker pull ubuntu:16.04
 #
 # Build the image.
 #
-docker build -t iay/java:oracle-8 .
+docker build --no-cache -t iay/java:oracle-8 .
 
 # End.

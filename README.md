@@ -9,7 +9,7 @@ Java distributions are a lot better in general than when I needed this; now
 I'm generally content to use any OpenJDK release, with a preference to use
 [Amazon Corretto](https://aws.amazon.com/corretto/) when possible.
 
-## Previous Text
+## Previous Text
 
 Docker base images for Java projects.
 

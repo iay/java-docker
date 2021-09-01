@@ -9,7 +9,7 @@ Java distributions are a lot better in general than when I needed this; now
 I'm generally content to use any OpenJDK release, with a preference to use
 [Amazon Corretto](https://aws.amazon.com/corretto/) when possible.
 
-## Previous Text
+## Previous Text
 
 This Docker image includes an Oracle Java 8 JDK built on the official Docker
 [`ubuntu:16.04`](https://registry.hub.docker.com/_/ubuntu/) image. It also includes

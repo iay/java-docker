@@ -1,4 +1,16 @@
 # java-docker
+
+## Archived Project
+
+I've stopped using this project because the Ubuntu PPA (Personal Package
+Archive) on which it depended is no longer available.
+
+Java distributions are a lot better in general than when I needed this; now
+I'm generally content to use any OpenJDK release, with a preference to use
+[Amazon Corretto](https://aws.amazon.com/corretto/) when possible.
+
+## Previous Text
+
 Docker base images for Java projects.
 
 Most of my Java projects are based on the official
